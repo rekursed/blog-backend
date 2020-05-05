@@ -9,6 +9,8 @@ from .managers import UserManager
 
 # Create your models here.
 class User(AbstractBaseUser, PermissionsMixin):
+    first_name = models.CharField(max_length=255)
+    last_name = models.CharField(max_length=255)
     email = models.EmailField(_('email address'), unique=True)
     is_staff = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)

@@ -21,6 +21,6 @@ router = routers.DefaultRouter()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('covid.urls', namespace='covid')),
-    path('', include('frontend.urls', namespace='blog')),
+    path('api/covid', include('covid.urls', namespace='covid')),
+    path('api/blog', include('blog.urls', namespace='blog')),
 ]
