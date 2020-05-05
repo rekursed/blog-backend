@@ -1,10 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from covid import views
-app_name = 'covid'
+from blog import views
+app_name = 'blog'
 
 urlpatterns = [
-    path('all', views.getAll),
-    path('countries', views.getCountries),
+    path('', views.index),
 ]

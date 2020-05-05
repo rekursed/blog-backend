@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "aws_region": "eu-west-2",
+        "django_settings": "core.settings",
+        "profile_name": "private",
+        "project_name": "backend",
+        "runtime": "python3.7",
+        "s3_bucket": "zappa-lambda"
+    }
+}

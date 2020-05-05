@@ -1,0 +1,23 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  background: #fff;
+}
+
+@media (min-width: 620px) {
+  #navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    height: 160px;
+    //padding: 90px 10px; /* Large padding which will shrink on scroll (using JS) */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: fixed; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99;
+  }
+}
+
